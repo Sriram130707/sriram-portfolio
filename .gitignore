@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+backend/.env
+backend/instance/*.db
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Optional personal resume (add your own resume.pdf)
+# Additional secrets and deployment files
+.env.*
+!.env.example
+.vercel/
+
+# Database files
+*.db
+*.sqlite3

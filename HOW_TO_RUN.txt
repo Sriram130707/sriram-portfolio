@@ -1,0 +1,25 @@
+RUN THE PORTFOLIO LOCALLY
+
+A. Start the frontend
+1. Extract the ZIP file.
+2. Open the portfolio folder in VS Code.
+3. Install the Live Server extension.
+4. Right-click index.html and choose Open with Live Server.
+
+B. Start the Python backend (in a second VS Code terminal)
+1. Open the portfolio/backend folder in the terminal.
+2. Run: py -m venv .venv
+3. Run: .\.venv\Scripts\Activate.ps1
+4. Run: pip install -r requirements.txt
+5. Run: python app.py
+6. Open http://127.0.0.1:5000/health to check that the API is running.
+
+C. Connect the frontend to the backend
+Open assets/js/config.js and set API_URL to:
+http://127.0.0.1:5000
+Save the file and refresh the portfolio website.
+
+The contact form saves valid messages in the backend SQLite database. Optional email notifications can be configured using environment variables; see backend/README.md. Do not publish passwords or .env files.
+
+DEPLOYMENT
+See README.md and backend/README.md for Vercel/Netlify frontend and Render backend instructions.
